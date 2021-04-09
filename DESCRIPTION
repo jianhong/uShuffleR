@@ -1,0 +1,19 @@
+Package: uShuffleR
+Title: R wrapperfor uShuffle
+Version: 0.0.1
+Authors@R: c(person("Jianhong", "Ou", role = c("aut", "cre"), 
+             email = "jianhong.ou@duke.edu"))
+Maintainer: Jianhong Ou <jianhong.ou@duke.edu>
+Description: uShuffle is a useful tool for shuffling biological sequences
+             published by Minghui Jiang et.al. at BMC Bioinformatics 2008.
+             This package is R wrapper for the tool.
+License: file LICENSE
+Imports: Biostrings, methods, Rcpp
+Depends: R (>= 3.1)
+Suggests: knitr
+VignetteBuilder: knitr
+RoxygenNote: 7.1.1
+Roxygen: list(markdown = TRUE)
+LazyData: true
+Encoding: UTF-8
+LinkingTo: Rcpp

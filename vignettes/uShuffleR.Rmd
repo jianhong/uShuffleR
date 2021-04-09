@@ -1,0 +1,46 @@
+---
+title: "uShuffleR Vignette"
+author: "Jianhong Ou"
+date: "`r Sys.Date()`"
+output: html_document
+vignette: >
+  %\VignetteIndexEntry{uShuffleR Vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include=FALSE}
+library(uShuffleR)
+library(Biostrings)
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+
+[uShuffle](https:://doi.org/10.1186/1471-2105-9-192) is a useful tool for 
+shuffling biological sequences published by Minghui Jiang et.al.
+This package is R wrapper for the tool.
+
+## Installation
+
+```{r, eval=FALSE}
+BiocManager::install("jianhong/uShuffleR")
+```
+
+## Usage
+
+```{r}
+library(uShuffleR)
+f <- system.file("extdata", "test.fa", package="uShuffleR")
+s <- shuffle(f)
+s
+library(Biostrings)
+writeXStringSet(s, "shuffled.sequence.fa")
+```
+
+## SessionInfo
+
+```{r}
+sessionInfo()
+```
+
