@@ -1,6 +1,6 @@
 Package: uShuffleR
 Title: R wrapperfor uShuffle
-Version: 0.0.1
+Version: 0.0.2
 Authors@R: c(person("Jianhong", "Ou", role = c("aut", "cre"), 
              email = "jianhong.ou@duke.edu"))
 Maintainer: Jianhong Ou <jianhong.ou@duke.edu>
